@@ -202,3 +202,25 @@ function initMap(){
       title: "Our Stadium",
     })
   }
+
+// const newsletterBtn = $('#subBtn');
+// const subscribeForm = $('#subForm');
+
+// subscribeForm.addEventListener('submit', function(e){
+//   alert("thanks!");
+// })
+// $(document).ready(function(){
+//   subscribeForm.submit(function(e){
+//     e.preventDefault();
+//     alert("thanks!");z
+//   })
+// })
+
+$(document).ready(function() {
+  $('#subBtn').click(function(e) {
+      e.preventDefault();
+      
+      var modal = new bootstrap.Modal($('#staticBackdrop'));
+      modal.show();
+  });
+});

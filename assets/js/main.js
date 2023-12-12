@@ -180,8 +180,25 @@
       }
     })
   }
-
     const currentYear = new Date().getFullYear();
     document.getElementById('current-year').textContent = currentYear.toString();
 
 })()
+
+/** Handles the Google Map */
+function initMap(){
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 24.994721672141985, lng: 55.465193999995776},
+    zoom: 10,
+
+    //24.994721672141985, 55.465193999995776
+
+    mapId: '47016df84e7b7de1'
+    });
+
+    new google.maps.Marker({
+      position: {lat: 24.994721672141985, lng: 55.465193999995776},
+      map,
+      title: "Our Stadium",
+    })
+  }

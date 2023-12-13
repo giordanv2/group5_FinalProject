@@ -2139,3 +2139,11 @@ section {
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
+
+.pagination > li > a {
+    background-color: white;
+    color: black;
+}
+.pagination > li > a:active {
+  color: #d9232d;
+}
